@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid;
+    width: fit-content;
+    padding: 80px;
+    color: #fff;
+  }
+
+  .card-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-main-button {
+    background-color: royalblue;
+    color: #fff;
+    padding: 5px;
+  }

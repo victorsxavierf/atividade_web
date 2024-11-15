@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: beige;
+    margin: 0 auto;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+header {
+    height: 15vh;
+    width: 100vw;
+    padding-top: 2rem;
+    background-color: tan;
+}
+
+main {
+    height: 70vh;
+    padding-top: 2rem;
+}
+
+footer {
+    height: 15vh;
+    width: 100vw;
+    padding-top: 2rem;
+    background-color: lightslategrey;
+}
+
+p {
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid beige;
+    border-radius: 10px;
+}
+
+p:hover {
+    background-color: lightblue;
+}
+
+span:hover {
+    color: lightblue;
+}

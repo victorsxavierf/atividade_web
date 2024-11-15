@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main class="principal">
+        <header class="cabecalho">
+            <h1 class="titulo">Consulta CEP</h1>
+        </header>
+        <section class="dados-consulta">
+            <input type="number" id="cep" onkeypress="return event.charCode >= 48" placeholder="Informe seu CEP" value="">
+            <button class="botao" type="submit" onclick="consultarCep()">Consultar</button>
+        </section>
+        <section class="resultado">
+            <h2 class="subtitulo">Resultado</h2>
+        </section>
+        <section class="dados-resultado">
+            <p class="dado-resultado" id="logradouro"></p>
+            <p class="dado-resultado" id="bairro"></p>
+            <p class="dado-resultado" id="localidade"></p>
+            <p class="dado-resultado" id="estado"></p>
+            <p class="dado-resultado" id="regiao"></p>
+            <p class="dado-resultado" id="ddd"></p>
+            <p id="erro"></p>
+        </section>
+    </main>
+</body>
+</html>
