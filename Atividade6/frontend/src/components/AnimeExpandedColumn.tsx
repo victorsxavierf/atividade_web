@@ -40,9 +40,9 @@ export default function AnimeExpandedColumn({ column, columnValue, apiColumn, id
                     key: apiColumn,
                     value: inputValue
                 })
-                showInfoToast("Anime atualizado com sucesso!")
+                showInfoToast("Série atualizado com sucesso!")
             } catch (error) {
-                showErrorToast("Ocorreu um erro ao atualizar o anime")
+                showErrorToast("Ocorreu um erro ao atualizar a série")
                 console.error(error)
             }
         } else {

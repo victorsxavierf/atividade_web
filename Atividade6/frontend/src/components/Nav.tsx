@@ -11,11 +11,11 @@ export function Nav() {
       link: '/register'
     },
     {
-      name: 'Lista de Animes',
+      name: 'Lista de Séries',
       link: '/list'
     },
     {
-      name: 'Editar Anime',
+      name: 'Editar Série',
       link: '/edit'
     }
   ]

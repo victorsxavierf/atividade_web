@@ -41,9 +41,9 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       studio,
     })
 
-    showInfoToast("Anime adicionado com sucesso!");
+    showInfoToast("Série adicionado com sucesso!");
   } catch (error) {
-    showErrorToast("Ocorreu um erro ao adicionar o anime")
+    showErrorToast("Ocorreu um erro ao adicionar a série")
     console.error(error)
   }
 }

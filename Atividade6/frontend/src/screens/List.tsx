@@ -21,7 +21,7 @@ export default function List() {
             const data = await response.data
             setAnimes(data)
         } catch (error) {
-            showErrorToast("Ocorreu um erro ao encontrar os animes")
+            showErrorToast("Ocorreu um erro ao encontrar a série")
             console.error(error)
         }
     }
@@ -38,7 +38,7 @@ export default function List() {
                     ? animes.map((anime, index) =>
                         <Anime key={index} anime={anime} />
                     )
-                    : <p className="text-[#f44336]">Não há animes detectados</p>
+                    : <p className="text-[#f45c5967]">Não há séries detectados</p>
                 }
             </main>
         </div>

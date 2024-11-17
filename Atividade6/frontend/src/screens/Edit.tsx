@@ -33,7 +33,7 @@ export default function Edit() {
         if (event.key === 'Enter') {
             const currentInput = event.target as HTMLInputElement
             if (!currentInput.value.trim()) {
-                showErrorToast("Por favor, insira o ID do anime.")
+                showErrorToast("Por favor, insira o ID da série.")
             } else {
                 handleCatchAnime(currentInput.value);
             }
@@ -44,10 +44,10 @@ export default function Edit() {
         try {
             const response = await axios.get(`${api}/animes/${id}`)
             const data = await response.data
-            showInfoToast("Anime encontrado!")
+            showInfoToast("Série encontrado!")
             setAnime(data)
         } catch (error) {
-            showErrorToast("Anime não encontrado")
+            showErrorToast("Série não encontrado")
             console.error(error)
             setAnime(animeDefault)
         }
@@ -59,7 +59,7 @@ export default function Edit() {
             <input
                 type="text"
                 className="w-1/6 max-md:w-5/6 pl-3 text-[#131016] shadow-2xl shadow-black rounded-lg h-10"
-                placeholder={'Digite o id do anime'}
+                placeholder={'Digite o id da série'}
                 onKeyDown={handleSubmit}
             />
             <div className="flex flex-col relative items-center justify-center rounded-xl max-w-[30rem] w-1/2 max-md:w-3/4 h-[50%] border">

@@ -43,14 +43,14 @@ const showErrorToast = (message: string) => {
 
 export default function AnimeExpanded({ anime, setAnime }: Props) {
     const handleDelete = async () => {
-        const confirm = window.confirm("Você deseja realmente excluir esse anime?")
+        const confirm = window.confirm("Você deseja realmente excluir essa série?")
         if (confirm) {
             try {
                 await axios.delete(`${api}/animes/${anime.id}`)
-                showInfoToast("Anime removido com sucesso!")
+                showInfoToast("Série removido com sucesso!")
                 setAnime(animeDefault)
             } catch (error) {
-                showErrorToast("Ocorreu um erro ao remover o anime")
+                showErrorToast("Ocorreu um erro ao remover a série")
                 console.error(error)
             }
         }

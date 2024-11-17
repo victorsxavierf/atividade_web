@@ -9,7 +9,7 @@ function Register() {
     <div className="flex gap-6 flex-col justify-center items-center bg-[#131016] text-white size-full">
       <Toaster />
       <Nav />
-      <h1 className="font-bold text-6xl">Animes</h1>
+      <h1 className="font-bold text-6xl">Séries</h1>
       <Form inputsData={inputsData}/>
     </div>
   )
